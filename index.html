@@ -1,0 +1,2067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naralivin — Premium Handloom for Hotels, Retailers & Exporters | B2B India</title>
+  <meta name="description" content="Naralivin is India's leading B2B handloom home textiles supplier. We offer premium handwoven bed sheets, curtains, cushion covers, sofa covers & blankets to hotels, retailers, exporters & healthcare." />
+  <meta name="keywords" content="handloom textiles India, B2B home textiles, handwoven bed sheets, hotel curtains supplier, handloom blankets wholesale, cushion covers manufacturer, sofa covers bulk order, hospitality textiles, export textiles India" />
+  <meta property="og:title" content="Naralivin — Premium Handloom Home Textiles | B2B" />
+  <meta property="og:description" content="India's trusted B2B handloom home textiles partner. Premium handwoven products for hospitality, retail, and export." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://naralivin.in" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://naralivin.in" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Naralivin",
+    "url": "https://naralivin.in",
+    "description": "India's leading B2B handloom home textiles supplier serving hospitality, retail, and export markets.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "naralivinofficial@gmail.com"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Panipat",
+      "addressRegion": "Haryana",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+
+  <style>
+    /* ═══════════════════════════════════════
+       DESIGN TOKENS — Editorial Minimal v2
+       ═══════════════════════════════════════ */
+    :root {
+      --black: #1A1A1A;
+      --black-soft: #2D2D2D;
+      --white: #FFFFFF;
+      --cream: #F5F0E6;
+      --cream-light: #FAF8F3;
+      --cream-dark: #EDE7D9;
+      --warm-grey: #F7F5F2;
+      --text-primary: #1A1A1A;
+      --text-secondary: #5A5A5A;
+      --text-muted: #8A8A8A;
+      --border: #E5E0D5;
+      --border-light: #F0ECE4;
+      --accent: #B5651D;
+
+      --font-heading: 'Cormorant', Georgia, serif;
+      --font-body: 'Montserrat', 'Segoe UI', sans-serif;
+
+      --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+      --transition: 0.35s var(--ease);
+    }
+
+    /* ═══════════════════════════════════════
+       RESET & BASE
+       ═══════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-body);
+      color: var(--text-primary);
+      background: var(--white);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ═══════════════════════════════════════
+       LAYOUT
+       ═══════════════════════════════════════ */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+    .container-narrow { max-width: 920px; margin: 0 auto; padding: 0 40px; }
+    .container-wide { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+
+    /* ═══════════════════════════════════════
+       NAVIGATION
+       ═══════════════════════════════════════ */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid transparent;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    .navbar.scrolled {
+      border-bottom-color: var(--border);
+      box-shadow: 0 1px 12px rgba(0,0,0,0.03);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      gap: 40px;
+    }
+    .nav-logo {
+      flex-shrink: 0;
+    }
+    .nav-logo img {
+      height: 40px;
+      width: auto;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      margin-left: auto;
+    }
+    .nav-links a {
+      font-size: 0.84rem;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      color: var(--text-secondary);
+      transition: color var(--transition);
+      position: relative;
+      white-space: nowrap;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--text-primary);
+      transition: width var(--transition);
+    }
+    .nav-links a:hover { color: var(--text-primary); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-shrink: 0;
+    }
+    .btn-nav {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 24px;
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      border-radius: 100px;
+      border: none;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .btn-nav:hover { background: #333; transform: translateY(-1px); }
+
+    /* Mobile */
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+    .mobile-toggle span {
+      display: block;
+      width: 24px;
+      height: 1.5px;
+      background: var(--black);
+      margin: 6px 0;
+      transition: all var(--transition);
+    }
+
+    /* ═══════════════════════════════════════
+       HERO
+       ═══════════════════════════════════════ */
+    .hero {
+      padding: 170px 0 80px;
+      text-align: center;
+    }
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: clamp(3rem, 7vw, 5.8rem);
+      font-weight: 400;
+      line-height: 1.05;
+      color: var(--text-primary);
+      margin-bottom: 48px;
+      letter-spacing: -1.5px;
+    }
+    .hero-title em {
+      font-style: italic;
+      font-weight: 400;
+    }
+    .hero-subtitle-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      max-width: 800px;
+      margin: 0 auto 72px;
+    }
+    .hero-subtitle-text {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      max-width: 300px;
+      text-align: left;
+    }
+    .hero-subtitle-divider {
+      width: 52px;
+      height: 52px;
+      flex-shrink: 0;
+      opacity: 0.6;
+    }
+
+    /* Hero image band */
+    .hero-image-band {
+      width: 100%;
+      max-width: 1040px;
+      margin: 0 auto;
+      aspect-ratio: 16/7;
+      background: #E8562A;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-image-band img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .hero-image-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      color: rgba(255,255,255,0.7);
+      font-size: 0.85rem;
+    }
+    .hero-image-placeholder svg { opacity: 0.35; color: white; }
+
+    /* Trusted by strip */
+    .trust-strip {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 48px;
+      font-size: 0.75rem;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+    }
+    .trust-strip span { font-weight: 500; }
+    .trust-tags {
+      display: flex;
+      gap: 10px;
+    }
+    .trust-tag {
+      padding: 5px 14px;
+      background: var(--warm-grey);
+      border-radius: 100px;
+      font-size: 0.72rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      letter-spacing: 0.3px;
+    }
+
+    /* ═══════════════════════════════════════
+       ZIGZAG FEATURES — Editorial style
+       Illustration on one side, text on the other
+       Large serif headings, generous whitespace
+       ═══════════════════════════════════════ */
+    .features { padding: 40px 0 20px; }
+    .feature-row {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 60px;
+      align-items: center;
+      padding: 100px 0;
+    }
+    .feature-row:not(:last-child) {
+      border-bottom: 1px solid var(--border-light);
+    }
+    .feature-row.reverse {
+      grid-template-columns: 1.15fr 0.85fr;
+    }
+    .feature-row.reverse .feature-text { order: 1; }
+    .feature-row.reverse .feature-illustration { order: 2; }
+    .feature-text h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.12;
+      margin-bottom: 24px;
+      color: var(--text-primary);
+    }
+    .feature-text p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.85;
+      max-width: 440px;
+    }
+    .feature-text .feature-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 24px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      border-bottom: 1px solid var(--text-primary);
+      padding-bottom: 2px;
+      transition: gap var(--transition);
+    }
+    .feature-text .feature-link:hover { gap: 12px; }
+    .feature-illustration {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .feature-illustration img {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+    }
+
+    /* ═══════════════════════════════════════
+       ABOUT BANNER
+       ═══════════════════════════════════════ */
+    .about-banner {
+      margin: 60px 32px;
+      background: var(--cream);
+      border-radius: 22px;
+      padding: 100px 40px;
+      text-align: center;
+    }
+    .about-label {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      color: var(--text-secondary);
+      margin-bottom: 28px;
+    }
+    .about-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4.5vw, 3.5rem);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.15;
+      max-width: 640px;
+      margin: 0 auto 32px;
+      color: var(--text-primary);
+    }
+    .about-stats {
+      display: flex;
+      justify-content: center;
+      gap: 56px;
+      margin-top: 48px;
+    }
+    .about-stat {
+      text-align: center;
+    }
+    .about-stat-num {
+      font-family: var(--font-heading);
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1;
+    }
+    .about-stat-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+      letter-spacing: 0.3px;
+    }
+    .about-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.88rem;
+      font-weight: 400;
+      color: var(--text-primary);
+      border-bottom: 1px solid var(--text-primary);
+      padding-bottom: 2px;
+      transition: all var(--transition);
+    }
+    .about-link:hover { gap: 14px; }
+
+    /* ═══════════════════════════════════════
+       PRODUCT CATEGORIES
+       ═══════════════════════════════════════ */
+    .products-section {
+      padding: 100px 0 80px;
+      background: var(--cream);
+    }
+    .products-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .products-header .section-tag {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .products-header h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--text-primary);
+    }
+
+    /* ── Product Slider ── */
+    .products-slider-wrapper {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 60px;
+    }
+    .products-slider-track {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding: 8px 0 20px;
+    }
+    .products-slider-track::-webkit-scrollbar { display: none; }
+    .product-card {
+      flex: 0 0 calc(33.333% - 14px);
+      scroll-snap-align: start;
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform var(--transition), box-shadow var(--transition);
+      cursor: pointer;
+    }
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.07);
+    }
+    .product-card-img {
+      aspect-ratio: 3/4;
+      overflow: hidden;
+    }
+    .product-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .product-card:hover .product-card-img img {
+      transform: scale(1.05);
+    }
+    .product-card-body {
+      padding: 20px 20px 22px;
+      text-align: center;
+    }
+    .product-card-body h3 {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+    .product-card-body span {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      margin-top: 4px;
+    }
+
+    /* Slider arrows */
+    .slider-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--cream-dark);
+      background: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all var(--transition);
+      z-index: 2;
+    }
+    .slider-arrow:hover {
+      background: var(--text-primary);
+      border-color: var(--text-primary);
+      color: var(--white);
+    }
+    .slider-arrow.prev { left: 8px; }
+    .slider-arrow.next { right: 8px; }
+    .slider-arrow svg {
+      width: 18px;
+      height: 18px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.5;
+    }
+
+    /* Slider progress bar */
+    .slider-progress {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .slider-progress-bar {
+      width: 120px;
+      height: 2px;
+      background: var(--cream-dark);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .slider-progress-fill {
+      height: 100%;
+      background: var(--text-primary);
+      border-radius: 2px;
+      width: 33%;
+      transition: width 0.3s ease;
+    }
+
+    /* ═══════════════════════════════════════
+       WHY CHOOSE US
+       ═══════════════════════════════════════ */
+    .why-section {
+      padding: 100px 0;
+    }
+    .why-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .why-header .section-tag {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .why-header h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 400;
+      font-style: italic;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+    .why-card {
+      background: var(--black);
+      color: var(--white);
+      border-radius: 18px;
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      min-height: 240px;
+      transition: transform var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .why-card::after {
+      content: '';
+      position: absolute;
+      bottom: -30px;
+      right: -30px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.03);
+    }
+    .why-card:hover { transform: translateY(-4px); }
+    .why-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+    .why-card p {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.65;
+      margin-top: auto;
+    }
+    .why-card svg {
+      width: 44px;
+      height: 44px;
+      opacity: 0.35;
+      margin-bottom: 20px;
+      align-self: flex-end;
+    }
+
+    /* ═══════════════════════════════════════
+       BLOG / JOURNAL SECTION
+       ═══════════════════════════════════════ */
+    .blog-section {
+      padding: 100px 0 80px;
+      border-top: 1px solid var(--border-light);
+    }
+    .blog-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 48px;
+    }
+    .blog-header-text .section-tag {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .blog-header-text h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 400;
+      font-style: italic;
+    }
+    .blog-header a {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      border-bottom: 1px solid var(--text-primary);
+      padding-bottom: 2px;
+      transition: all var(--transition);
+      white-space: nowrap;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .blog-card {
+      cursor: pointer;
+      transition: transform var(--transition);
+    }
+    .blog-card:hover { transform: translateY(-4px); }
+    .blog-card-img {
+      aspect-ratio: 4/3;
+      background: linear-gradient(145deg, var(--cream), var(--cream-dark));
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .blog-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .blog-card:hover .blog-card-img img {
+      transform: scale(1.05);
+    }
+    .blog-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      letter-spacing: 0.3px;
+    }
+    .blog-card-meta .blog-tag {
+      padding: 3px 10px;
+      background: var(--warm-grey);
+      border-radius: 100px;
+      font-weight: 500;
+      font-size: 0.68rem;
+    }
+    .blog-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      font-weight: 500;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .blog-card p {
+      font-size: 0.84rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .blog-card .read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      margin-top: 14px;
+      transition: gap var(--transition);
+    }
+    .blog-card:hover .read-more { gap: 8px; }
+
+    /* ═══════════════════════════════════════
+       CONTACT / INQUIRY
+       ═══════════════════════════════════════ */
+    .contact-section {
+      padding: 100px 0;
+      border-top: 1px solid var(--border-light);
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .contact-info h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 3.5vw, 2.6rem);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+    .contact-info > p {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 36px;
+      max-width: 360px;
+    }
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .contact-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .contact-item-icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    .contact-item h4 {
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      margin-bottom: 2px;
+    }
+    .contact-item p {
+      font-size: 0.86rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* Form */
+    .inquiry-form {
+      background: var(--cream-light);
+      padding: 44px;
+      border-radius: 18px;
+      border: 1px solid var(--border-light);
+    }
+    .inquiry-form h3 {
+      font-family: var(--font-heading);
+      font-size: 1.6rem;
+      font-weight: 500;
+      font-style: italic;
+      margin-bottom: 4px;
+    }
+    .inquiry-form > p {
+      font-size: 0.83rem;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .form-group { margin-bottom: 14px; }
+    .form-group label {
+      display: block;
+      font-size: 0.73rem;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      color: var(--text-secondary);
+      margin-bottom: 6px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-family: var(--font-body);
+      font-size: 0.86rem;
+      color: var(--text-primary);
+      background: var(--white);
+      transition: border-color var(--transition), box-shadow var(--transition);
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--black);
+      box-shadow: 0 0 0 3px rgba(26,26,26,0.05);
+    }
+    .form-group textarea { resize: vertical; min-height: 90px; }
+    .form-submit {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 8px;
+      padding: 14px;
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .form-submit:hover { background: #333; transform: translateY(-1px); }
+
+    /* ═══════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════ */
+    .footer {
+      background: var(--black);
+      color: rgba(255,255,255,0.6);
+      padding: 64px 0 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 56px;
+    }
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .footer-brand p {
+      font-size: 0.85rem;
+      line-height: 1.7;
+      max-width: 300px;
+      margin-top: 16px;
+    }
+    .footer-brand-logo img {
+      height: 90px;
+      width: auto;
+    }
+    .footer-col h4 {
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+      margin-bottom: 18px;
+    }
+    .footer-col a {
+      display: block;
+      font-size: 0.86rem;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 10px;
+      transition: color var(--transition);
+    }
+    .footer-col a:hover { color: var(--white); }
+    .footer-big-text {
+      font-family: var(--font-heading);
+      font-size: clamp(2.2rem, 5.5vw, 4.5rem);
+      font-weight: 400;
+      font-style: italic;
+      color: rgba(255,255,255,0.06);
+      text-align: center;
+      line-height: 1.1;
+      padding: 48px 0 36px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.25);
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    /* ═══════════════════════════════════════
+       SCROLL ANIMATIONS
+       ═══════════════════════════════════════ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+
+    /* ═══════════════════════════════════════
+       ADVANCED INTERACTIONS
+       ═══════════════════════════════════════ */
+
+    /* ── Custom cursor ── */
+    .cursor-dot {
+      position: fixed;
+      width: 8px;
+      height: 8px;
+      background: var(--black);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: width 0.25s, height 0.25s, background 0.25s, opacity 0.25s;
+      mix-blend-mode: difference;
+    }
+    .cursor-ring {
+      position: fixed;
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(26,26,26,0.3);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9998;
+      transform: translate(-50%, -50%);
+      transition: width 0.35s var(--ease), height 0.35s var(--ease), border-color 0.35s, opacity 0.35s;
+    }
+    .cursor-dot.hovering {
+      width: 48px;
+      height: 48px;
+      background: var(--accent);
+      opacity: 0.15;
+    }
+    .cursor-ring.hovering {
+      width: 56px;
+      height: 56px;
+      border-color: var(--accent);
+      opacity: 0.5;
+    }
+    @media (max-width: 1024px) {
+      .cursor-dot, .cursor-ring { display: none; }
+    }
+
+    /* ── Scroll progress bar ── */
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 2px;
+      background: var(--accent);
+      z-index: 10001;
+      width: 0%;
+      transition: none;
+    }
+
+    /* ── Text split reveal ── */
+    .text-reveal-line {
+      overflow: hidden;
+      display: block;
+    }
+    .text-reveal-line span {
+      display: inline-block;
+      transform: translateY(110%);
+      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .text-reveal-line.visible span {
+      transform: translateY(0);
+    }
+    .text-reveal-line:nth-child(2) span { transition-delay: 0.08s; }
+    .text-reveal-line:nth-child(3) span { transition-delay: 0.16s; }
+
+    /* ── Parallax image ── */
+    .parallax-img {
+      will-change: transform;
+    }
+
+    /* ── Magnetic button ── */
+    .magnetic {
+      will-change: transform;
+      transition: transform 0.3s var(--ease);
+    }
+
+    /* ── Counter animation ── */
+    .count-up {
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* ── Image tilt on hover ── */
+    .tilt-card {
+      transform-style: preserve-3d;
+      perspective: 800px;
+    }
+    .tilt-card-inner {
+      transition: transform 0.4s var(--ease);
+      will-change: transform;
+    }
+
+    /* ── Smooth link underline ── */
+    .feature-link, .about-link, .read-more {
+      background-image: linear-gradient(var(--accent), var(--accent));
+      background-size: 0% 1px;
+      background-position: left bottom;
+      background-repeat: no-repeat;
+      transition: background-size 0.4s var(--ease), gap 0.35s var(--ease);
+    }
+    .feature-link:hover, .about-link:hover, .read-more:hover {
+      background-size: 100% 1px;
+    }
+
+    /* ── Floating decorative elements ── */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+    @keyframes float-slow {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(2deg); }
+    }
+    .hero-subtitle-divider {
+      animation: float 4s ease-in-out infinite;
+    }
+
+    /* ── Navbar logo hover ── */
+    .nav-logo img {
+      transition: transform 0.4s var(--ease), filter 0.4s var(--ease);
+    }
+    .nav-logo:hover img {
+      transform: scale(1.05);
+    }
+
+    /* ── Why card icon pulse ── */
+    .why-card svg {
+      transition: transform 0.5s var(--ease);
+    }
+    .why-card:hover svg {
+      transform: scale(1.15) rotate(-5deg);
+    }
+
+    /* ── Form focus glow ── */
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      box-shadow: 0 0 0 3px rgba(181,101,29,0.1);
+    }
+
+    /* ── Smooth section transitions ── */
+    section {
+      position: relative;
+    }
+
+    /* ── Hero title entrance ── */
+    @keyframes hero-enter {
+      from { opacity: 0; transform: translateY(40px) scale(0.97); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .hero-title.visible {
+      animation: hero-enter 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    /* ── Trust tags slide in ── */
+    .trust-tag {
+      opacity: 0;
+      transform: translateX(-12px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .trust-strip.visible .trust-tag {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .trust-strip.visible .trust-tag:nth-child(1) { transition-delay: 0.1s; }
+    .trust-strip.visible .trust-tag:nth-child(2) { transition-delay: 0.2s; }
+    .trust-strip.visible .trust-tag:nth-child(3) { transition-delay: 0.3s; }
+    .trust-strip.visible .trust-tag:nth-child(4) { transition-delay: 0.4s; }
+    .trust-strip.visible .trust-tag:nth-child(5) { transition-delay: 0.5s; }
+
+    /* ── Feature illustration entrance ── */
+    .feature-illustration {
+      opacity: 0;
+      transform: scale(0.88);
+      transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .feature-row.visible .feature-illustration {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .feature-text h2 {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease 0.15s, transform 0.6s ease 0.15s;
+    }
+    .feature-row.visible .feature-text h2 {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .feature-text p {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.6s ease 0.3s, transform 0.6s ease 0.3s;
+    }
+    .feature-row.visible .feature-text p {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .feature-text .feature-link {
+      opacity: 0;
+      transition: opacity 0.5s ease 0.45s, gap 0.35s var(--ease), background-size 0.4s var(--ease);
+    }
+    .feature-row.visible .feature-text .feature-link {
+      opacity: 1;
+    }
+
+    /* ── About banner counter animation ── */
+    .about-stat-num {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .about-banner.visible .about-stat-num {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .about-banner.visible .about-stat:nth-child(1) .about-stat-num { transition-delay: 0.1s; }
+    .about-banner.visible .about-stat:nth-child(2) .about-stat-num { transition-delay: 0.2s; }
+    .about-banner.visible .about-stat:nth-child(3) .about-stat-num { transition-delay: 0.3s; }
+    .about-banner.visible .about-stat:nth-child(4) .about-stat-num { transition-delay: 0.4s; }
+
+    /* ── Blog card staggered hover ripple ── */
+    .blog-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, transparent 0%, rgba(181,101,29,0.03) 100%);
+      opacity: 0;
+      transition: opacity 0.5s;
+      border-radius: 14px;
+      pointer-events: none;
+    }
+    .blog-card { position: relative; }
+    .blog-card:hover::before { opacity: 1; }
+
+    /* ── Form submit button interaction ── */
+    .form-submit {
+      position: relative;
+      overflow: hidden;
+    }
+    .form-submit::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 0.6s, height 0.6s;
+    }
+    .form-submit:active::after {
+      width: 300px;
+      height: 300px;
+    }
+
+    /* ── Footer big text parallax ── */
+    .footer-big-text {
+      transition: transform 0.3s ease;
+    }
+
+    /* ═══════════════════════════════════════
+       RESPONSIVE
+       ═══════════════════════════════════════ */
+    @media (max-width: 1024px) {
+      .product-card { flex: 0 0 calc(50% - 10px); }
+      .products-slider-wrapper { padding: 0 50px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+      .blog-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .container, .container-narrow, .container-wide { padding: 0 24px; }
+      .nav-links { display: none; }
+      .nav-logo img { height: 32px; }
+      .mobile-toggle { display: block; }
+      .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        padding: 24px 32px;
+        border-bottom: 1px solid var(--border);
+        gap: 16px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      }
+      .hero { padding: 130px 0 60px; }
+      .hero-subtitle-row { flex-direction: column; gap: 24px; }
+      .hero-subtitle-text { text-align: center; max-width: 320px; }
+      .trust-strip { flex-direction: column; gap: 10px; }
+      .feature-row {
+        grid-template-columns: 0.4fr 1fr;
+        gap: 20px;
+        padding: 64px 0;
+        align-items: center;
+      }
+      .feature-row.reverse {
+        grid-template-columns: 1fr 0.4fr;
+      }
+      .feature-row.reverse .feature-text { order: 1; }
+      .feature-row.reverse .feature-illustration { order: 2; }
+      .feature-illustration {
+        margin-left: -24px;
+      }
+      .feature-row.reverse .feature-illustration {
+        margin-left: 0;
+        margin-right: -24px;
+      }
+      .feature-illustration img {
+        max-width: 160px;
+      }
+      .feature-text h2 {
+        font-size: clamp(1.8rem, 6vw, 2.4rem);
+      }
+      .feature-text p {
+        font-size: 0.84rem;
+        line-height: 1.7;
+      }
+      .feature-text .feature-link {
+        font-size: 0.78rem;
+      }
+      .product-card { flex: 0 0 calc(75% - 10px); }
+      .products-slider-wrapper { padding: 0 40px; }
+      .slider-arrow { width: 36px; height: 36px; }
+      .slider-arrow.prev { left: 2px; }
+      .slider-arrow.next { right: 2px; }
+      .why-grid { grid-template-columns: 1fr; padding: 0 24px; }
+      .blog-grid { grid-template-columns: 1fr; }
+      .blog-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .form-row { grid-template-columns: 1fr; }
+      .about-banner { margin: 32px 16px; padding: 64px 24px; }
+      .about-stats { gap: 32px; flex-wrap: wrap; }
+      .footer-top { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+      .inquiry-form { padding: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Cursor & Progress -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ════════════ NAVIGATION ════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <!-- Logo — Left aligned, 1.8x size -->
+      <a href="#" class="nav-logo" aria-label="Naralivin Home">
+        <img src="LOGO02.svg" alt="Naralivin" />
+      </a>
+
+      <!-- Menu items -->
+      <div class="nav-links" id="navLinks">
+        <a href="#products">Our Products</a>
+        <a href="about.html">About Us</a>
+        <a href="#why-us">Why Naralivin</a>
+        <a href="#blog">Journal</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <!-- CTA — Right side -->
+      <div class="nav-right">
+        <a href="#contact" class="btn-nav">Get a Quote</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════════════ HERO ════════════ -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1 class="hero-title reveal">Premium handloom for<br /><em>hotels, retailers & exporters</em></h1>
+      <div class="hero-subtitle-row reveal">
+        <p class="hero-subtitle-text">India's trusted B2B handloom home textiles supplier — handwoven bed sheets, curtains, cushion covers & more for your business.</p>
+        <svg class="hero-subtitle-divider" viewBox="0 0 48 48" fill="currentColor">
+          <circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="30" cy="6" r="2"/><circle cx="42" cy="6" r="2"/>
+          <circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><circle cx="30" cy="18" r="2"/><circle cx="42" cy="18" r="2"/>
+          <circle cx="6" cy="30" r="2"/><circle cx="18" cy="30" r="2"/><circle cx="30" cy="30" r="2"/><circle cx="42" cy="30" r="2"/>
+          <circle cx="6" cy="42" r="2"/><circle cx="18" cy="42" r="2"/><circle cx="30" cy="42" r="2"/><circle cx="42" cy="42" r="2"/>
+        </svg>
+        <p class="hero-subtitle-text">Serving hotels, retail stores, exporters, banquets & healthcare — directly from artisan weaving clusters across India.</p>
+      </div>
+
+      <div class="hero-image-band reveal">
+        <img src="Gemini_Generated_Image_yry2zayry2zayry2.png" alt="Indian artisan weaving handloom home textiles on a traditional loom — handloom workshop illustration with yarn spools, shuttle, and woven fabric" loading="eager" />
+      </div>
+
+      <div class="trust-strip reveal">
+        <span>Trusted by</span>
+        <div class="trust-tags">
+          <span class="trust-tag">Hotels & Resorts</span>
+          <span class="trust-tag">Retail Chains</span>
+          <span class="trust-tag">Exporters</span>
+          <span class="trust-tag">Banquets</span>
+          <span class="trust-tag">Healthcare</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ ZIGZAG FEATURES ════════════ -->
+  <section class="features" id="features">
+    <div class="container-narrow">
+
+      <div class="feature-row reveal">
+        <div class="feature-illustration">
+          <img src="Gemini_Generated_Image_9dtjyl9dtjyl9dtj.png" alt="Indian artisan weaving handloom textiles on a traditional loom — minimal line art illustration" loading="lazy" />
+        </div>
+        <div class="feature-text">
+          <h2>100% authentic<br />handloom craftsmanship</h2>
+          <p>Every Naralivin textile is handwoven by skilled artisans from India's heritage weaving clusters. We work with communities across Uttar Pradesh, West Bengal, Tamil Nadu, and Rajasthan — preserving centuries of craft tradition while delivering products that meet modern hospitality and retail quality standards.</p>
+          <a href="#products" class="feature-link">View our collection &rarr;</a>
+        </div>
+      </div>
+
+      <div class="feature-row reverse reveal">
+        <div class="feature-text">
+          <h2>Built for bulk orders,<br />tailored for your brand</h2>
+          <p>From 200 bed sheets for a boutique hotel to 10,000 cushion covers for a retail chain — we handle orders of every scale. Naralivin offers flexible minimum order quantities, private labelling, custom packaging, and dedicated account management so your supply chain runs smoothly.</p>
+          <a href="#contact" class="feature-link">Request a quote &rarr;</a>
+        </div>
+        <div class="feature-illustration">
+          <img src="Gemini_Generated_Image_tr09mktr09mktr09.png" alt="Stacked shipping cartons with folded textiles and branded labels — minimal line art illustration" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="feature-row reveal">
+        <div class="feature-illustration">
+          <img src="Gemini_Generated_Image_qidmkvqidmkvqidm.png" alt="Person sitting on shipping box with India map and delivery truck — minimal line art illustration" loading="lazy" />
+        </div>
+        <div class="feature-text">
+          <h2>Pan-India delivery &<br />international exports</h2>
+          <p>We supply handloom home textiles to businesses across 15+ Indian states and growing international export markets. Our reliable logistics network ensures on-time dispatch, complete export documentation support, and quality-controlled packaging for every shipment.</p>
+          <a href="#contact" class="feature-link">Enquire for exports &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════ ABOUT BANNER ════════════ -->
+  <section id="about">
+    <div class="about-banner reveal">
+      <div class="about-label">About us</div>
+      <h2 class="about-title">At Naralivin, we weave more than textiles. We build lasting business partnerships.</h2>
+      <a href="about.html" class="about-link">Read our story &rarr;</a>
+      <div class="about-stats">
+        <div class="about-stat">
+          <div class="about-stat-num">500+</div>
+          <div class="about-stat-label">Business Partners</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">1000+</div>
+          <div class="about-stat-label">Artisans Empowered</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">15+</div>
+          <div class="about-stat-label">States Served</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">10+</div>
+          <div class="about-stat-label">Years in Business</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ PRODUCT CATEGORIES ════════════ -->
+  <section class="products-section" id="products">
+    <div class="products-header reveal">
+      <p class="section-tag">Our Collection</p>
+      <h2>Discover our Handloom Textiles</h2>
+    </div>
+    <div class="products-slider-wrapper reveal">
+      <button class="slider-arrow prev" aria-label="Previous products" onclick="slideProducts(-1)">
+        <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div class="products-slider-track" id="productsTrack">
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="976e3e483e5bdfe3e72119a7e5d27489.jpg" alt="Handloom striped bed sheets in warm tones" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <h3>Bed Sheets</h3>
+            <span>Explore collection &rarr;</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="b6c129375084d6aa50fea92dea00eddc.jpg" alt="Handloom striped sofa cover draped over couch" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <h3>Sofa Covers</h3>
+            <span>Explore collection &rarr;</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="927b2f521c1c6994d3e314bbc18e7bf1.jpg" alt="Cream curtains with decorative scallop border trim" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <h3>Curtains</h3>
+            <span>Explore collection &rarr;</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="9ab13e07ae9bc04872f27b750287a216.jpg" alt="Decorative handloom cushions in blue and brown" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <h3>Cushions</h3>
+            <span>Explore collection &rarr;</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="6cf67d8867f2638c3dd95c60d2cdaf1d.jpg" alt="Diagonal striped handloom cushion covers" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <h3>Cushion Covers</h3>
+            <span>Explore collection &rarr;</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="5f2e3c298d451ad1f540e78023a98721.jpg" alt="Soft handloom blankets folded on wooden stool" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <h3>Blankets</h3>
+            <span>Explore collection &rarr;</span>
+          </div>
+        </div>
+      </div>
+      <button class="slider-arrow next" aria-label="Next products" onclick="slideProducts(1)">
+        <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+      <div class="slider-progress">
+        <div class="slider-progress-bar">
+          <div class="slider-progress-fill" id="sliderProgress"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ WHY CHOOSE US ════════════ -->
+  <section class="why-section" id="why-us">
+    <div class="why-header reveal">
+      <p class="section-tag">Why Partner With Us</p>
+      <h2>We are here to help your business grow</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <h3>Quality Assured<br />Handloom Products</h3>
+        <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round">
+          <circle cx="24" cy="20" r="12"/><path d="M18 20l4 4 8-8"/>
+          <path d="M10 38 L24 46 L38 38"/>
+        </svg>
+        <p>Rigorous quality checks at every stage — from raw material selection to final packaging. Every batch is inspected before dispatch.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-1">
+        <h3>Flexible MOQs &<br />Private Labelling</h3>
+        <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round">
+          <rect x="8" y="8" width="14" height="14" rx="2"/><rect x="26" y="8" width="14" height="14" rx="2"/>
+          <rect x="8" y="26" width="14" height="14" rx="2"/><rect x="26" y="26" width="14" height="14" rx="2"/>
+        </svg>
+        <p>Whether you need 100 pieces or 10,000 — we adapt. Custom labelling, packaging, and branding options for every partner.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <h3>Direct Artisan<br />Pricing</h3>
+        <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round">
+          <path d="M12 38 L12 20 L24 10 L36 20 L36 38"/>
+          <line x1="8" y1="38" x2="40" y2="38"/>
+          <rect x="18" y="28" width="12" height="10" rx="1"/>
+        </svg>
+        <p>We source directly from weaver clusters — eliminating middlemen. Premium handloom quality at wholesale prices that protect your margins.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ BLOG / JOURNAL ════════════ -->
+  <section class="blog-section" id="blog">
+    <div class="container">
+      <div class="blog-header reveal">
+        <div class="blog-header-text">
+          <p class="section-tag">Latest from our Journal</p>
+          <h2>Insights on handloom & home textiles</h2>
+        </div>
+        <a href="#">View all articles &rarr;</a>
+      </div>
+      <div class="blog-grid">
+
+        <a href="blog-hotels-handloom-bedsheets.html" class="blog-card reveal" style="text-decoration:none;color:inherit;">
+          <div class="blog-card-img">
+            <img src="976e3e483e5bdfe3e72119a7e5d27489.jpg" alt="Handloom striped bed sheets in a hotel setting" loading="lazy" />
+          </div>
+          <div class="blog-card-meta">
+            <span class="blog-tag">Industry</span>
+            <span>8 min read</span>
+          </div>
+          <h3>Why Hotels Are Quietly Replacing Power Loom Sheets with Handloom</h3>
+          <p>It started with a few boutique properties in Rajasthan. Now the shift is showing up in hotel chains across the country — and it's not just about sustainability branding. We break down what's actually driving the change.</p>
+          <span class="read-more">Read more &rarr;</span>
+        </a>
+
+        <a href="blog-choosing-handloom-fabric-bulk.html" class="blog-card reveal reveal-delay-1" style="text-decoration:none;color:inherit;">
+          <div class="blog-card-img">
+            <img src="b6c129375084d6aa50fea92dea00eddc.jpg" alt="Handloom sofa cover showing fabric texture detail" loading="lazy" />
+          </div>
+          <div class="blog-card-meta">
+            <span class="blog-tag">Buying Guide</span>
+            <span>7 min read</span>
+          </div>
+          <h3>A Practical Guide to Choosing Handloom Fabric for Bulk Orders</h3>
+          <p>Thread count is just the beginning. Yarn quality, weave structure, shrinkage, colour fastness — here's what actually matters when you're ordering hundreds of pieces, from someone who supplies them.</p>
+          <span class="read-more">Read more &rarr;</span>
+        </a>
+
+        <a href="blog-handloom-vs-powerloom.html" class="blog-card reveal reveal-delay-2" style="text-decoration:none;color:inherit;">
+          <div class="blog-card-img">
+            <img src="927b2f521c1c6994d3e314bbc18e7bf1.jpg" alt="Handloom curtains with detailed border work" loading="lazy" />
+          </div>
+          <div class="blog-card-meta">
+            <span class="blog-tag">Sustainability</span>
+            <span>9 min read</span>
+          </div>
+          <h3>Handloom vs Power Loom: An Honest Comparison for Business Buyers</h3>
+          <p>We sell handloom for a living, so we're obviously biased. But we'd rather give you an honest comparison than oversell something that might not fit. Here's when handloom makes sense — and when it doesn't.</p>
+          <span class="read-more">Read more &rarr;</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ CONTACT / INQUIRY ════════════ -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h2>Let's build something<br />together</h2>
+          <p>Ready to stock premium handloom textiles for your business? Send us an inquiry and our team will prepare a custom quote within 24 hours.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <svg class="contact-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <h4>Visit Us</h4>
+                <p>Naralivin Textiles<br/>Panipat, Haryana, India</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg class="contact-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.46 2.54 1.3 4.97 2.46 7.2a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c2.23 1.16 4.66 2 7.2 2.46A2 2 0 0122 16.92z"/></svg>
+              <div>
+                <h4>Call Us</h4>
+                <p>+91 XXXXX XXXXX<br/>Mon – Sat, 9 AM – 7 PM</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg class="contact-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <div>
+                <h4>Email Us</h4>
+                <p>naralivinofficial@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg class="contact-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 014 10 15 15 0 01-4 10 15 15 0 01-4-10A15 15 0 0112 2z"/></svg>
+              <div>
+                <h4>Website</h4>
+                <p>www.naralivin.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inquiry-form reveal">
+          <h3>Send an inquiry</h3>
+          <p>Tell us about your requirements and we'll get back to you.</p>
+          <form id="inquiryForm" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" placeholder="Full name" required />
+              </div>
+              <div class="form-group">
+                <label>Business Name</label>
+                <input type="text" placeholder="Company name" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="you@company.com" required />
+              </div>
+              <div class="form-group">
+                <label>Phone</label>
+                <input type="tel" placeholder="+91 XXXXX XXXXX" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Business Type</label>
+              <select required>
+                <option value="" disabled selected>Select your business type</option>
+                <option value="hospitality">Hospitality (Hotels / Resorts)</option>
+                <option value="retail">Retail Shop</option>
+                <option value="exporter">Exporter</option>
+                <option value="banquet">Banquet / Event Venue</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="interior">Interior Designer</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Products Interested In</label>
+              <select required>
+                <option value="" disabled selected>Select product category</option>
+                <option value="bedsheets">Bed Sheets</option>
+                <option value="sofa-covers">Sofa Covers</option>
+                <option value="curtains">Curtains</option>
+                <option value="cushions">Cushions & Covers</option>
+                <option value="blankets">Blankets</option>
+                <option value="multiple">Multiple Categories</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Your Message</label>
+              <textarea placeholder="Tell us about your requirements — quantity, sizes, customisation needs, delivery timeline..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Inquiry &rarr;</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ FOOTER ════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-logo">
+            <img src="LOGO01.svg" alt="Naralivin" />
+          </div>
+          <p>Premium handloom home textiles, directly from Indian artisan clusters to your business.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <a href="#products">Bed Sheets</a>
+          <a href="#products">Sofa Covers</a>
+          <a href="#products">Curtains</a>
+          <a href="#products">Cushions & Covers</a>
+          <a href="#products">Blankets</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="#why-us">Why Naralivin</a>
+          <a href="#blog">Journal</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>For Business</h4>
+          <a href="#contact">Bulk Orders</a>
+          <a href="#contact">Custom Labelling</a>
+          <a href="#contact">Export Enquiry</a>
+          <a href="#contact">Request Catalogue</a>
+        </div>
+      </div>
+      <div class="footer-big-text">
+        Woven with care.<br />Built for business.
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Naralivin. All rights reserved.</span>
+        <span>naralivin.in</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════ JAVASCRIPT ════════════ -->
+  <script>
+    // ══════════════════════════════════════
+    // 1. CUSTOM CURSOR
+    // ══════════════════════════════════════
+    const dot = document.getElementById('cursorDot');
+    const ring = document.getElementById('cursorRing');
+    let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      dot.style.left = mouseX + 'px';
+      dot.style.top = mouseY + 'px';
+    });
+
+    function animateRing() {
+      ringX += (mouseX - ringX) * 0.12;
+      ringY += (mouseY - ringY) * 0.12;
+      ring.style.left = ringX + 'px';
+      ring.style.top = ringY + 'px';
+      requestAnimationFrame(animateRing);
+    }
+    animateRing();
+
+    // Cursor hover states
+    document.querySelectorAll('a, button, .product-card, .blog-card, .why-card, .slider-arrow').forEach(el => {
+      el.addEventListener('mouseenter', () => { dot.classList.add('hovering'); ring.classList.add('hovering'); });
+      el.addEventListener('mouseleave', () => { dot.classList.remove('hovering'); ring.classList.remove('hovering'); });
+    });
+
+    // ══════════════════════════════════════
+    // 2. SCROLL PROGRESS BAR
+    // ══════════════════════════════════════
+    const scrollProgressBar = document.getElementById('scrollProgress');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      scrollProgressBar.style.width = (scrollTop / docHeight * 100) + '%';
+    }, { passive: true });
+
+    // ══════════════════════════════════════
+    // 3. NAVBAR
+    // ══════════════════════════════════════
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    // Mobile menu
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+    mobileToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('active'));
+    });
+
+    // ══════════════════════════════════════
+    // 4. SCROLL REVEAL (enhanced with feature rows)
+    // ══════════════════════════════════════
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.reveal, .feature-row').forEach(el => revealObserver.observe(el));
+
+    // ══════════════════════════════════════
+    // 5. COUNTER ANIMATION (stats)
+    // ══════════════════════════════════════
+    function animateCounters() {
+      document.querySelectorAll('.about-stat-num').forEach(el => {
+        const text = el.textContent;
+        const match = text.match(/(\d+)/);
+        if (!match) return;
+        const target = parseInt(match[1]);
+        const suffix = text.replace(match[1], '');
+        const duration = 1800;
+        const start = performance.now();
+
+        el.classList.add('count-up');
+
+        function tick(now) {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          // Ease out cubic
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const current = Math.round(target * eased);
+          el.textContent = current + suffix;
+          if (progress < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      });
+    }
+
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounters();
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    const aboutBanner = document.querySelector('.about-banner');
+    if (aboutBanner) statsObserver.observe(aboutBanner);
+
+    // ══════════════════════════════════════
+    // 6. PARALLAX ON HERO IMAGE
+    // ══════════════════════════════════════
+    const heroImage = document.querySelector('.hero-image-band img');
+    if (heroImage) {
+      heroImage.classList.add('parallax-img');
+      window.addEventListener('scroll', () => {
+        const rect = heroImage.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          const speed = 0.08;
+          const offset = (window.innerHeight / 2 - rect.top - rect.height / 2) * speed;
+          heroImage.style.transform = `translateY(${offset}px) scale(1.05)`;
+        }
+      }, { passive: true });
+    }
+
+    // ══════════════════════════════════════
+    // 7. MAGNETIC BUTTONS
+    // ══════════════════════════════════════
+    document.querySelectorAll('.btn-nav, .form-submit, .slider-arrow, .about-link').forEach(btn => {
+      btn.classList.add('magnetic');
+      btn.addEventListener('mousemove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        const x = (e.clientX - rect.left - rect.width / 2) * 0.25;
+        const y = (e.clientY - rect.top - rect.height / 2) * 0.25;
+        btn.style.transform = `translate(${x}px, ${y}px)`;
+      });
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = 'translate(0, 0)';
+      });
+    });
+
+    // ══════════════════════════════════════
+    // 8. PRODUCT CARD TILT ON HOVER
+    // ══════════════════════════════════════
+    document.querySelectorAll('.product-card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        card.style.transform = `translateY(-6px) rotateX(${-y * 8}deg) rotateY(${x * 8}deg)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0) rotateX(0) rotateY(0)';
+        card.style.transition = 'transform 0.5s var(--ease)';
+      });
+      card.addEventListener('mouseenter', () => {
+        card.style.transition = 'transform 0.15s ease-out';
+      });
+    });
+
+    // ══════════════════════════════════════
+    // 9. WHY-CARD STAGGERED REVEAL
+    // ══════════════════════════════════════
+    const whyCards = document.querySelectorAll('.why-card');
+    const whyObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }, i * 120);
+          whyObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    whyCards.forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(30px)';
+      card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      whyObserver.observe(card);
+    });
+
+    // ══════════════════════════════════════
+    // 10. SMOOTH SECTION PARALLAX
+    // ══════════════════════════════════════
+    const featureIllustrations = document.querySelectorAll('.feature-illustration img');
+    window.addEventListener('scroll', () => {
+      featureIllustrations.forEach(img => {
+        const rect = img.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          const offset = (window.innerHeight - rect.top) * 0.04;
+          img.style.transform = `translateY(${-offset}px)`;
+        }
+      });
+    }, { passive: true });
+
+    // ══════════════════════════════════════
+    // 11. FORM
+    // ══════════════════════════════════════
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.textContent = 'Sent! We\'ll be in touch within 24 hours.';
+      btn.style.background = '#4a7c59';
+      setTimeout(() => {
+        btn.innerHTML = 'Send Inquiry &rarr;';
+        btn.style.background = '';
+        e.target.reset();
+      }, 3500);
+    }
+
+    // ══════════════════════════════════════
+    // 12. SMOOTH SCROLL FOR ANCHOR LINKS
+    // ══════════════════════════════════════
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // ══════════════════════════════════════
+    // 13. PRODUCT SLIDER
+    // ══════════════════════════════════════
+    const productsTrack = document.getElementById('productsTrack');
+    const sliderProgress = document.getElementById('sliderProgress');
+
+    function updateSliderProgress() {
+      if (!productsTrack || !sliderProgress) return;
+      const maxScroll = productsTrack.scrollWidth - productsTrack.clientWidth;
+      const pct = maxScroll > 0 ? (productsTrack.scrollLeft / maxScroll) * 100 : 0;
+      sliderProgress.style.width = Math.max(20, Math.min(100, pct)) + '%';
+    }
+
+    function slideProducts(dir) {
+      if (!productsTrack) return;
+      const card = productsTrack.querySelector('.product-card');
+      const scrollAmt = card ? card.offsetWidth + 20 : 300;
+      productsTrack.scrollBy({ left: dir * scrollAmt, behavior: 'smooth' });
+    }
+
+    if (productsTrack) {
+      productsTrack.addEventListener('scroll', updateSliderProgress);
+      updateSliderProgress();
+
+      let isDragging = false, startX, scrollStart;
+      productsTrack.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.pageX;
+        scrollStart = productsTrack.scrollLeft;
+        productsTrack.style.cursor = 'grabbing';
+      });
+      productsTrack.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        productsTrack.scrollLeft = scrollStart - (e.pageX - startX);
+      });
+      document.addEventListener('mouseup', () => {
+        isDragging = false;
+        if (productsTrack) productsTrack.style.cursor = '';
+      });
+    }
+
+    // ══════════════════════════════════════
+    // 14. FOOTER BIG TEXT PARALLAX
+    // ══════════════════════════════════════
+    const footerBigText = document.querySelector('.footer-big-text');
+    if (footerBigText) {
+      window.addEventListener('scroll', () => {
+        const rect = footerBigText.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          const offset = (window.innerHeight - rect.top) * 0.02;
+          footerBigText.style.transform = `translateY(${-offset}px)`;
+        }
+      }, { passive: true });
+    }
+
+    // ══════════════════════════════════════
+    // 15. BLOG CARD IMAGE PARALLAX ON HOVER
+    // ══════════════════════════════════════
+    document.querySelectorAll('.blog-card').forEach(card => {
+      const img = card.querySelector('.blog-card-img img');
+      if (!img) return;
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        img.style.transform = `scale(1.05) translate(${x * 8}px, ${y * 8}px)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        img.style.transform = 'scale(1)';
+      });
+    });
+
+    // ══════════════════════════════════════
+    // 16. CONTACT FORM INPUT LABEL ANIMATION
+    // ══════════════════════════════════════
+    document.querySelectorAll('.form-group input, .form-group textarea').forEach(input => {
+      input.addEventListener('focus', () => {
+        input.parentElement.querySelector('label').style.color = 'var(--accent)';
+        input.parentElement.querySelector('label').style.transform = 'translateY(-2px)';
+        input.parentElement.querySelector('label').style.transition = 'all 0.3s ease';
+      });
+      input.addEventListener('blur', () => {
+        input.parentElement.querySelector('label').style.color = '';
+        input.parentElement.querySelector('label').style.transform = '';
+      });
+    });
+
+  </script>
+</body>
+</html>

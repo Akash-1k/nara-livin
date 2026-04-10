@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Naralivin — Our Story, Our Craft, Our People</title>
+  <meta name="description" content="Naralivin is a B2B handloom home textiles company based in Panipat, Haryana. We work directly with artisan weaving clusters across India to supply premium handwoven products to hotels, retailers, and exporters." />
+  <meta name="keywords" content="about Naralivin, handloom textile company India, Panipat handloom supplier, B2B home textiles, handwoven textiles manufacturer" />
+  <meta property="og:title" content="About Naralivin — Our Story, Our Craft, Our People" />
+  <meta property="og:description" content="From Panipat's weaving heartland to businesses across India and beyond." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://naralivin.in/about.html" />
+  <link rel="canonical" href="https://naralivin.in/about.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --black: #1A1A1A;
+      --black-soft: #2D2D2D;
+      --white: #FFFFFF;
+      --cream: #F5F0E6;
+      --cream-light: #FAF8F3;
+      --cream-dark: #EDE7D9;
+      --text-primary: #1A1A1A;
+      --text-secondary: #5A5A5A;
+      --text-muted: #8A8A8A;
+      --border: #E5E0D5;
+      --accent: #B5651D;
+      --font-heading: 'Cormorant', Georgia, serif;
+      --font-body: 'Montserrat', 'Segoe UI', sans-serif;
+      --transition: 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-body);
+      color: var(--text-primary);
+      background: var(--white);
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ── Navigation ── */
+    .about-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+    }
+    .about-nav-logo img { height: 40px; }
+    .about-nav-links {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+    .about-nav-links a {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      letter-spacing: 0.3px;
+      transition: color var(--transition);
+    }
+    .about-nav-links a:hover { color: var(--text-primary); }
+    .about-nav-links .btn-nav {
+      padding: 10px 24px;
+      background: var(--black);
+      color: var(--white);
+      border-radius: 40px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: background var(--transition);
+    }
+    .about-nav-links .btn-nav:hover { background: var(--accent); }
+
+    /* ── Hero ── */
+    .about-hero {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 40px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .about-hero-text .tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .about-hero-text h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.15;
+      margin-bottom: 24px;
+    }
+    .about-hero-text .lead {
+      font-size: 1.02rem;
+      color: var(--text-secondary);
+      line-height: 1.85;
+      max-width: 480px;
+    }
+    .about-hero-img {
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .about-hero-img img {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+    }
+
+    /* ── Story section ── */
+    .about-story {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 100px 24px;
+    }
+    .about-story h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 400;
+      font-style: italic;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    .about-story p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    /* ── Stats band ── */
+    .about-stats-band {
+      background: var(--cream);
+      padding: 64px 40px;
+    }
+    .about-stats-grid {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      text-align: center;
+    }
+    .about-stat-num {
+      font-family: var(--font-heading);
+      font-size: 3rem;
+      font-weight: 400;
+      color: var(--text-primary);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .about-stat-label {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Values section ── */
+    .about-values {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 100px 40px;
+    }
+    .about-values-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .about-values-header .tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .about-values-header h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 400;
+      font-style: italic;
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+    .value-card {
+      padding: 36px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .value-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+    }
+    .value-card .value-num {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: var(--cream-dark);
+      margin-bottom: 16px;
+    }
+    .value-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    .value-card p {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* ── Panipat section ── */
+    .about-location {
+      background: var(--black);
+      color: rgba(255,255,255,0.7);
+      padding: 100px 40px;
+    }
+    .about-location-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .about-location .tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+      margin-bottom: 16px;
+    }
+    .about-location h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--white);
+      margin-bottom: 24px;
+      line-height: 1.2;
+    }
+    .about-location p {
+      font-size: 0.95rem;
+      line-height: 1.85;
+      max-width: 640px;
+      margin: 0 auto 16px;
+    }
+
+    /* ── CTA ── */
+    .about-cta {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 80px 24px 100px;
+      text-align: center;
+    }
+    .about-cta h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 400;
+      font-style: italic;
+      margin-bottom: 16px;
+    }
+    .about-cta p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      margin-bottom: 32px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .about-cta .btn {
+      display: inline-block;
+      padding: 14px 36px;
+      background: var(--black);
+      color: var(--white);
+      border-radius: 40px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: background var(--transition);
+    }
+    .about-cta .btn:hover { background: var(--accent); }
+
+    /* ── Footer ── */
+    .about-footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    .about-footer a { color: var(--text-secondary); }
+    .about-footer a:hover { color: var(--text-primary); }
+
+    /* ── Responsive ── */
+    @media (max-width: 1024px) {
+      .about-hero { grid-template-columns: 1fr; gap: 40px; padding: 60px 32px 0; }
+      .about-hero-img { max-width: 500px; }
+      .values-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-stats-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+    }
+    @media (max-width: 768px) {
+      .about-nav { padding: 16px 20px; }
+      .about-nav-links { gap: 16px; }
+      .about-nav-links a:not(.btn-nav) { display: none; }
+      .about-hero { padding: 40px 20px 0; }
+      .about-story { padding: 64px 20px; }
+      .about-stats-band { padding: 48px 20px; }
+      .about-values { padding: 64px 20px; }
+      .values-grid { grid-template-columns: 1fr; gap: 24px; }
+      .about-location { padding: 64px 20px; }
+      .about-cta { padding: 64px 20px 80px; }
+      .about-footer { flex-direction: column; gap: 12px; text-align: center; padding: 24px 20px; }
+    }
+
+    /* ── Reveal animation ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ════════════ NAVIGATION ════════════ -->
+  <nav class="about-nav">
+    <a href="index.html" class="about-nav-logo"><img src="LOGO02.svg" alt="Naralivin" /></a>
+    <div class="about-nav-links">
+      <a href="index.html#products">Products</a>
+      <a href="index.html#why-us">Why Us</a>
+      <a href="index.html#blog">Journal</a>
+      <a href="index.html#contact" class="btn-nav">Get a Quote</a>
+    </div>
+  </nav>
+
+  <!-- ════════════ HERO ════════════ -->
+  <section class="about-hero">
+    <div class="about-hero-text reveal">
+      <p class="tag">About Naralivin</p>
+      <h1>We started with one loom and a simple belief</h1>
+      <p class="lead">That handloom textiles deserve a proper place in modern business — not as a novelty, but as a genuinely better product. Naralivin connects India's skilled weaving communities with hotels, retailers, and exporters who care about what goes into the products they sell.</p>
+    </div>
+    <div class="about-hero-img reveal">
+      <img src="b405fed44a09038b8c04be88be795c2d.jpg" alt="Display of handwoven red and white quilts and textiles" />
+    </div>
+  </section>
+
+  <!-- ════════════ OUR STORY ════════════ -->
+  <section class="about-story">
+    <h2 class="reveal">How we got here</h2>
+
+    <p class="reveal">Naralivin didn't start in a boardroom. It started in Panipat — a city that's been at the heart of India's textile trade for generations. If you've ever visited, you know the place runs on looms. The sound of shuttles is as common as traffic.</p>
+
+    <p class="reveal">We grew up around this. Watching weavers create incredible fabrics by hand, then seeing those same products get undervalued in crowded wholesale markets. The craftsmanship was there. The quality was there. But the connection to the businesses that could actually appreciate and pay fairly for this work? That was missing.</p>
+
+    <p class="reveal">So we built Naralivin to bridge that gap. We work directly with artisan clusters — no middlemen, no long supply chains eating into what the weavers earn. We handle quality control, custom sizing, private labelling, and logistics so our partners get a reliable, professional supply chain backed by centuries of weaving knowledge.</p>
+
+    <p class="reveal">Today, we supply handloom home textiles to hotels, retail chains, healthcare facilities, and exporters across India and internationally. The business has grown, but the core hasn't changed: good products, made by hand, delivered with care.</p>
+  </section>
+
+  <!-- ════════════ STATS ════════════ -->
+  <section class="about-stats-band">
+    <div class="about-stats-grid reveal">
+      <div>
+        <div class="about-stat-num">500+</div>
+        <div class="about-stat-label">Business Partners</div>
+      </div>
+      <div>
+        <div class="about-stat-num">1000+</div>
+        <div class="about-stat-label">Artisans Empowered</div>
+      </div>
+      <div>
+        <div class="about-stat-num">15+</div>
+        <div class="about-stat-label">States Served</div>
+      </div>
+      <div>
+        <div class="about-stat-num">10+</div>
+        <div class="about-stat-label">Years in Business</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ VALUES ════════════ -->
+  <section class="about-values">
+    <div class="about-values-header reveal">
+      <p class="tag">What We Stand For</p>
+      <h2>Built on craft, run like a business</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <div class="value-num">01</div>
+        <h3>Artisan-first sourcing</h3>
+        <p>We buy directly from weaving clusters in Panipat, Uttar Pradesh, West Bengal, Tamil Nadu, and Rajasthan. No middlemen means better prices for both the weaver and the buyer.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-num">02</div>
+        <h3>Quality you can measure</h3>
+        <p>Every batch goes through dimensional checks, wash tests, and colour fastness testing before it ships. We don't rely on "looks good enough" — we have numbers to back it up.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-num">03</div>
+        <h3>Built for B2B</h3>
+        <p>We understand bulk ordering, lead times, private labelling, and custom packaging. If you need 5,000 bed sheets with your brand tag, we know how to make that happen smoothly.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-num">04</div>
+        <h3>Sustainability by design</h3>
+        <p>Handloom weaving uses zero electricity. Our entire production supports rural livelihoods and traditional skills. It's not a marketing angle — it's how the product is made.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-num">05</div>
+        <h3>Honest communication</h3>
+        <p>We'll tell you realistic lead times, flag potential issues early, and never promise something we can't deliver. Long-term partnerships matter more to us than one big order.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-num">06</div>
+        <h3>Growing with our partners</h3>
+        <p>Many of our clients started with a 200-piece trial order. Some now order tens of thousands annually. We scale with you — and the quality stays the same.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ PANIPAT ════════════ -->
+  <section class="about-location">
+    <div class="about-location-inner reveal">
+      <p class="tag">Where We're Based</p>
+      <h2>Panipat — the textile capital of India</h2>
+      <p>There's a reason we're based here. Panipat has been India's largest hub for home textiles manufacturing for decades. The city produces everything from blankets and bed sheets to rugs and furnishing fabric — and a significant portion of it is still made on handlooms.</p>
+      <p>Being in Panipat means we're close to our weavers, close to our raw material suppliers, and well-connected to major logistics routes across North India. It lets us maintain quality control in person, respond quickly to orders, and keep our costs competitive.</p>
+    </div>
+  </section>
+
+  <!-- ════════════ CTA ════════════ -->
+  <section class="about-cta reveal">
+    <h2>Want to work with us?</h2>
+    <p>Whether you're a hotel chain, a retail brand, or an exporter — we'd love to hear what you're looking for.</p>
+    <a href="index.html#contact" class="btn">Get in Touch &rarr;</a>
+  </section>
+
+  <!-- ════════════ FOOTER ════════════ -->
+  <footer class="about-footer">
+    <span>&copy; 2026 Naralivin. All rights reserved.</span>
+    <a href="index.html">Back to Home</a>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
